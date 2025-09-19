@@ -7,7 +7,7 @@ const Features = () => {
     <div className="mt-10  border-t-[1px] border-b-[1px] border-slate-200">
       {/* Container */}
 
-      <div className="max-padding-container !pl-16 flexBetween gap-4 rounded-2xl p-8">
+      <div className="max-padding-container !pl-4 flexBetween gap-4 rounded-2xl p-8 pb-2">
         <div className="flex flex-col items-center gap-3">
           <GiLindenLeaf size={35} />
           <div>

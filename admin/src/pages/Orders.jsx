@@ -28,7 +28,7 @@ const Orders = () => {
   }
 
   return (
-    <div className="px-2 ">
+    <div className="px-2 mt-2">
       <h1 className="text-2xl font-bold mb-6">Your Orders</h1>
 
       <div className="flex flex-col gap-4">

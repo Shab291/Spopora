@@ -207,7 +207,7 @@ const Add = () => {
   ].includes(category);
 
   return (
-    <div className="px-2 sm:px-8 mt-2 min-h-screen pb-8">
+    <div className="px-2 sm:px-8 md:mt-2">
       <h3 className="bold-28 mb-6">Add Product</h3>
       <form
         className="flex flex-col gap-y-4 medium-14 lg:w-[777px]"

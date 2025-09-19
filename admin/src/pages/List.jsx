@@ -292,7 +292,7 @@ const List = () => {
         {/* TABLE HEADER */}
         <div className="grid grid-cols-[80px_2fr_1fr_1fr_1fr_120px] items-center py-3 px-4 bg-gray-50 font-semibold text-gray-700 border-b">
           <div>Image</div>
-          <div>Name & Details</div>
+          <div>Details</div>
           <div>Category</div>
           <div>Price</div>
           <div>Attributes</div>

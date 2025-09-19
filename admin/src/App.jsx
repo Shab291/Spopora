@@ -32,7 +32,7 @@ export default function App() {
         <div className="bg-slate-100 text-[#404040]">
           <div className="mx-auto max-w-[1440px] flex flex-col sm:flex-row">
             <SideBar admin={admin} />
-            <div className="mt-48 sm:mt-0 sm:ml-[20%] w-full sm:w-4/5 p-4">
+            <div className="mt-20 sm:mt-0 sm:ml-[20%] w-full sm:w-4/5 p-4">
               <Routes>
                 <Route
                   path="/"

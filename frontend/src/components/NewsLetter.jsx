@@ -62,9 +62,9 @@ const NewsLetter = () => {
 
   return (
     <section className="max-padding-container border-t-[1px] border-slate-200 py-12 mt-16">
-      <div className="flexBetween flex-wrap gap-7 ">
+      <div className="flex flex-col flexBetween md:flex flex-wrap gap-7 ">
         <div>
-          <h4 className="bold-14 uppercase tracking-wider">
+          <h4 className="bold-14 uppercase text-center tracking-wider">
             Subscribe Newsletter
           </h4>
           <p>Get latest information on Event, Sales & Offers.</p>
@@ -77,7 +77,7 @@ const NewsLetter = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
               aria-label="Email address for newsletter"
-              className="p-1.5 w-[266px] bg-slate-100 outline-none"
+              className="p-1.5 min-w-[225px] bg-slate-100 outline-none"
               disabled={status === "loading"}
             />
             <button

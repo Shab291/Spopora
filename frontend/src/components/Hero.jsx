@@ -121,7 +121,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="relative mt-16 h-[75vh] lg:max-h-[75vh] overflow-hidden">
+    <section className="relative mt-16 h-screen lg:max-h-[75vh]">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}

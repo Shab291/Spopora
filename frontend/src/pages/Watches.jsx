@@ -36,7 +36,7 @@ const Watches = () => {
     <>
       <div className="main-container bg-gradient-to-b from-gray-50 to-white">
         {/* Top Background */}
-        <div className=" top-0 relative w-full h-[450px] overflow-hidden">
+        <div className=" top-0 relative w-full h-[450px]  overflow-hidden">
           <img src={watchBg} alt="watch background" className="w-full h-full" />
           <div className="absolute inset-0 flex items-end bg-black/20">
             <h1
