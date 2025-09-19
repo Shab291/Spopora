@@ -1,6 +1,6 @@
 import { ToastContainer } from "react-toastify";
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import AdminDashBoard from "./pages/AdminDashBoard";
 import SideBar from "./components/SideBar";
 import Add from "./pages/Add";
