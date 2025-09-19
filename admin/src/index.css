@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+.bg-primary {
+  background: #e9ecef;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  border: 1px solid #8080802f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e6e6e6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+.shadows {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Headings */
+.h1 {
+  font-size: 43px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+/* Link & Button Utilities */
+.active-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.activeLink {
+  border-right: 3px solid red;
+  color: red;
+  background: rgba(85, 0, 0, 0.05);
+
+  @media (max-width: 768px) {
+    border-right: none;
+    border-bottom: 3px solid red;
+  }
+}
+
+.btn-white {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  color: #6b7280; /* text-tertiary */
+  border: 1px solid white;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.btn-dark {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #212529; /* tertiary */
+  color: white;
+  border: 1px solid #6b7280;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+.btn-light {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #3a86ff; /* primary */
+  border: 1px solid #1e90ff;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.btn-outline {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  border: 1px solid #1e90ff;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.btn-outline:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.btn-secondary {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ff9800;
+  color: white;
+  border: 1px solid #ff9800;
+  padding: 0.625rem 1.75rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+/* Layout Utilities */
+.max-padding-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.regular-64 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-52 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-48 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-40 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-32 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.regular-28 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.regular-24 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.regular-22 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.regular-20 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.regular-18 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.regular-16 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.regular-15 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.regular-14 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.medium-64 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-52 {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-48 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-40 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-36 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.medium-32 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.medium-28 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.medium-24 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.medium-22 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.medium-20 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.medium-18 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.medium-16 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.medium-15 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.medium-14 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bold-88 {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-64 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-52 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-48 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-44 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-40 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-36 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-32 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-28 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-24 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-22 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.bold-20 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.bold-18 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.bold-16 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.bold-15 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.bold-14 {
+  font-size: 14px;
+  font-weight: 700;
+}

@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/*==================== 1. VARIABLES CSS ====================*/
+:root {
+  --text: #c8bcd4; /* Light color matching your text color */
+  --clr: #162933; /* Darker tone similar to your gradient */
+  --clr2: #2b4457; /* Lighter shade for gradient */
+  --gradgap: 40%; /* Adjust as needed */
+  --gradoffset: 70%; /* Adjust as needed */
+  --hue: 195; /* Adjust based on your color scheme */
+  --sat: 40%; /* Adjust saturation */
+  --hue2: 200; /* Slight variation for hover effect */
+  --sat2: 30%; /* Adjust hover saturation */
+  --blur: 10px; /* Blur level for effects */
+  /* Primary Colors */
+  --primary-light: #203a43; /* Lighter Teal */
+
+  /* Secondary Colors */
+  --secondary-color: #56cfe1; /* Aqua Blue */
+  --secondary-light: #26e6af; /* Light Aqua */
+  --secondary-dark: #2a9d8f; /* Darker Aqua */
+
+  /* Neutral Colors */
+  --text-secondary: #8795a1; /* Muted Grayish Blue */
+  --background-light: #eaeff1; /* Light Background */
+  --background-dark: #18253c; /* Dark Background */
+
+  /* Additional */
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-cinzel: "Cinzel", serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-primary {
+  background: #e9ecef;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border: 1px solid #8080802f;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fd0daa;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ba107c;
+}
+
+.shadows {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Image Animation */
+
+.image-animation {
+  object-fit: cover;
+  transition: 0.5s ease;
+  animation: jump 4s infinite ease-in-out;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Optional: Shadow under the image using pseudo-element */
+.image-container::before {
+  position: absolute;
+  bottom: -30px;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  background-color: #1a1818ab;
+  content: "";
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+
+/* Zoom Out Function */
+.zoom-out-fade {
+  animation: zoomFade 0.6s forwards ease-in-out;
+}
+
+@keyframes zoomFade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+//Hero section Font Dragon Hunter
+@font-face {
+  font-family: "DragonHunter";
+  src: url("/fonts/DragonHunter") format(".otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Headings */
+.h1 {
+  font-size: 43px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+/* Link & Button Utilities */
+.active-link {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fd0daa;
+}
+
+.btn-white {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  color: #6b7280; /* text-tertiary */
+  border: 1px solid white;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.btn-dark {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #212529; /* tertiary */
+  color: white;
+  border: 1px solid #6b7280;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2); /* Dark shadow */
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4),
+      0 4px 6px -2px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+}
+
+.btn-light {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #3a86ff; /* primary */
+  border: 1px solid #1e90ff;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.btn-outline {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  border: 1px solid #1e90ff;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.btn-outline:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.btn-secondary {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ff9800;
+  color: white;
+  border: 1px solid #ff9800;
+  padding: 0.625rem 1.75rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+/* Layout Utilities */
+.max-padding-container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.regular-64 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-52 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-48 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-40 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.regular-32 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.regular-28 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.regular-24 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.regular-22 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.regular-20 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.regular-18 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.regular-16 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.regular-15 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.regular-14 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.medium-64 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-52 {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-48 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-40 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.medium-36 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.medium-32 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.medium-28 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.medium-24 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.medium-22 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.medium-20 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.medium-18 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.medium-16 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.medium-15 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.medium-14 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bold-88 {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-64 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-52 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-48 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-44 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-40 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-36 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-32 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-28 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-24 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.bold-22 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.bold-20 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.bold-18 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.bold-16 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.bold-15 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.bold-14 {
+  font-size: 14px;
+  font-weight: 700;
+}
