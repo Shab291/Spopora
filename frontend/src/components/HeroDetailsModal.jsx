@@ -35,7 +35,9 @@ const HeroDetailsModal = ({ handleClose, product, onNext, onPrev }) => {
               <div>
                 <h1 className="bold-36">{product.name}</h1>
                 <p className="text-[#FD0DAA] bold-18">{product.category}</p>
-                <p className="mt-3">{product.description}</p>
+                <p className="mt-3 line-clamp-2 lg:line-clamp-none">
+                  {product.description}
+                </p>
                 <p className="mt-3 bold-20">
                   Price: {currency}
                   {product.price}

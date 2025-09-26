@@ -59,11 +59,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full margin-auto mb-2 fixed top-0 pl-6 pr-6 z-50 bg-white border-b-1 border-gray-400">
+    <header className="w-full margin-auto mb-2 fixed top-0 pr-2 pl-2 lg:pl-6 lg:pr-6 z-50 bg-white border-b-1 border-gray-400">
       <div className="flexBetween py-2 relative">
         {/* LOGO */}
         <Link to="/" className="flex flex-1 gap-2 items-center">
-          <img src={logoWhite} alt="logo" className="w-[185px] h-[55px]" />
+          <img
+            src={logoWhite}
+            alt="logo"
+            className="min-w-[130px] lg:w-[185px] h-[55px]"
+          />
         </Link>
 
         {/* NAVBAR */}
@@ -119,7 +123,7 @@ const Header = () => {
                 </div>
               ) : (
                 <button
-                  className="flex btn-dark !bg-[#FD0DAA] !ring-[#bc127e] hover:!bg-[#bc127e] justify-center items-center gap-x-2"
+                  className="flex btn-dark !bg-[#FD0DAA] !ring-[#bc127e] !px-3 !py-1.5 hover:!bg-[#bc127e] justify-center items-center gap-x-2"
                   onClick={() => navigate("/login")}
                 >
                   Login <RiUserLine size="18" className="cursor-pointer" />

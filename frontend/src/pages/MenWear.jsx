@@ -63,7 +63,7 @@ const MenWear = () => {
           </div>
         ) : (
           <div className="max-padding-container pt-6">
-            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
               {paginatedProduct.map((product, index) => (
                 <div key={index} className="grid-item">
                   <Items product={product} />

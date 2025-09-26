@@ -9,6 +9,7 @@ import Headphone from "./pages/Headphone";
 import Perfumes from "./pages/Perfumes";
 import Collection from "./pages/Collection";
 //import Blog from "./pages/Blog";
+import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
@@ -20,6 +21,9 @@ import Verify from "./pages/Verify";
 function App() {
   return (
     <main>
+      {/* 👇 This ensures scroll resets on every route change */}
+      <ScrollToTop />
+
       <div className="overflow-hidden text-gray-800">
         <ToastContainer />
         <ReviewModal />

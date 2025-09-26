@@ -7,7 +7,7 @@ const Blog = () => {
       <div className="max-padding-container ">
         <div className="">
           {/* Container */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 gap-y-14 pb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 gap-y-14 pb-16">
             {blogs.slice(0, 8).map((blog) => (
               <div key={blog.title} className="relative">
                 <img src={blog.image} alt="Blog-Image" className="rounded-xl" />

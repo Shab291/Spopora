@@ -114,14 +114,14 @@ const Hero = () => {
 
   if (loading) {
     return (
-      <section className="relative mt-16 h-[75vh] lg:max-h-[75vh] overflow-hidden flex items-center justify-center">
+      <section className="relative mt-12 h-[75vh] lg:max-h-[75vh] overflow-hidden flex items-center justify-center">
         <div className="text-white text-xl">Loading featured products...</div>
       </section>
     );
   }
 
   return (
-    <section className="relative mt-16 h-screen lg:max-h-[75vh]">
+    <section className="relative mt-16 h-[84vh] lg:max-h-[75vh]">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -150,7 +150,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/10 z-1"></div>
 
             {/* Content container */}
-            <div className="container h-full relative z-10 flex flex-1 flex-col lg:flex-row items-center px-4 lg:px-20 gap-2 lg:gap-25">
+            <div className="container lg:h-full relative z-10 flex justify-between flex-col lg:flex-row items-center px-4 lg:px-20 gap-4 lg:gap-25">
               <div className="max-w-2xl text-center text-white p-8">
                 <h1
                   className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-2xl"
@@ -177,12 +177,12 @@ const Hero = () => {
                   </button>
                 </NavLink>
               </div>
-              <div className="relative w-[375px] h-[375px] image-container flex items-center justify-center">
+              <div className="relative w-[275px] h-[275px] lg:w-[375px] lg:h-[375px] image-container flex items-center justify-center">
                 <img
                   src={slide.src}
                   alt="Stylish Watch"
                   onClick={() => handleImageClick(slide.id)}
-                  className={`image image-animation cursor-pointer ${
+                  className={`image image-animation cursor-pointer lg:mr-30 ${
                     isZoomed ? "zoom-out-fade" : ""
                   }`}
                 />

@@ -138,7 +138,7 @@ const Collection = () => {
 
             {filterProducts?.length > 0 ? (
               <>
-                <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 gap-y-6">
+                <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 gap-y-6">
                   {getPaginatedProducts().map((product, index) => (
                     <Items product={product} key={index} />
                   ))}

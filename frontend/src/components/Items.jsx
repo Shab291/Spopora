@@ -31,8 +31,13 @@ const Items = ({ product }) => {
           {isHovered && (
             <div>
               <button
-                className="absolute bottom-1 right-1 py-a px-2 flex items-center gap-1 rounded-full bg-[#FD0DAA] hover:bg-[#ba107c] text-white"
-                onClick={() => addToCart(product._id)}
+                className={`absolute bottom-1 right-1 py-a px-2 flex items-center gap-1 rounded-full bg-[#FD0DAA] hover:bg-[#ba107c] text-white   md:${
+                  isHovered ? "flex" : "hidden"
+                } flex`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  addToCart(product._id);
+                }}
               >
                 Add <TiShoppingCart />
               </button>

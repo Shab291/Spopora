@@ -29,19 +29,19 @@ const NewArrivals = () => {
           }}
           breakpoints={{
             300: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            666: {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            900: {
+            666: {
               slidesPerView: 3,
               spaceBetween: 20,
             },
+            900: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
             1300: {
-              slidesPerView: 3,
+              slidesPerView: 5,
               spaceBetween: 20,
             },
           }}
