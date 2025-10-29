@@ -114,7 +114,7 @@ const Hero = () => {
 
   if (loading) {
     return (
-      <section className="relative mt-12 h-[75vh] lg:max-h-[75vh] overflow-hidden flex items-center justify-center">
+      <section className="relative mt-12 max-h-screen lg:max-h-[75vh] overflow-hidden flex items-center justify-center">
         <div className="text-white text-xl">Loading featured products...</div>
       </section>
     );

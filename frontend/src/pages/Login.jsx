@@ -211,7 +211,7 @@ const Login = () => {
                   <button
                     type="button"
                     onClick={() => setCurrentState("Sign Up")}
-                    className="text-blue-600 hover:text-blue-800 font-medium underline"
+                    className="text-blue-600 hover:text-blue-800 font-medium underline cursor-pointer"
                   >
                     Sign up
                   </button>
@@ -222,13 +222,23 @@ const Login = () => {
                   <button
                     type="button"
                     onClick={() => setCurrentState("Login")}
-                    className="text-blue-600 hover:text-blue-800 font-medium underline"
+                    className="text-blue-600 hover:text-blue-800 font-medium underline cursor-pointer"
                   >
                     Sign in
                   </button>
                 </p>
               )}
             </div>
+            <p className="text-center text-sm text-gray-600">
+              Go Back to{" "}
+              <button
+                type="button"
+                className="underline text-blue-600 hover:text-blue-800 cursor-pointer font-medium"
+                onClick={() => navigate("/")}
+              >
+                Home Page
+              </button>
+            </p>
           </form>
         </div>
       </div>
